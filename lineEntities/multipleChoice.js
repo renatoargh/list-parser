@@ -5,7 +5,7 @@ class MultipleChoice extends NestedEntity {
   constructor(line) {
     super();
 
-    this.title = line.match(/^-\s\(\s\)(.*)$/)[1].trim();
+    this.title = line.match(/^-\s\[\s\](.*)$/)[1].trim();
   }
 
   toJSON() {
